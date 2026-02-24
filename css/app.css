@@ -105,30 +105,31 @@ body {
 }
 
 .button{
-   border: none;
-    outline: none;
-    background-color: #FFBC11;
-    border-radius: 30px;
-    padding: 15px 24px;
-    font-weight: 700;
-    font-size: .9rem;
-    cursor: pointer;
-    width: 80%;
-    max-width: 300px;
-    display: block;
-    margin: 0 auto 10px auto;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #FFC300 0%, #FFD700 100%);
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 20px 40px;
+        /* Más grande para móviles */
+        font-size: 1.1rem;
+        border-radius: 50px;
+        /* Más redondeado = más moderno/app */
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px
 }
 
 .button:hover {
     background-color: #e6a800;
-    transform: translateY(-1px);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 195, 0, 0.4);
 }
 
 
 .section-one {
-    background: #C0CBCE;
+    background: #1C1F26;
     width: 100%;
     height: 60vh;
     display: flex;
@@ -142,10 +143,9 @@ body {
     width: 100%;
     height: 90%;
     margin: 0 auto;
-    background: #ffffff;
+    background: #1C1F26;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 
     /* Configuración Flexbox para el contenido interno (por defecto para móviles) */
@@ -184,7 +184,7 @@ body {
 .subtitle-section-text {
     font-size: 1.5em;
     font-weight: bold;
-    color: #333;
+    color: #FFBC11;
     margin-bottom: 15px;
     line-height: 1.2;
 }
@@ -199,13 +199,13 @@ body {
 /* Contenedor interno (section2) */
 
 .section-two {
-    background: #17B8A6;
     width: 100%;
     height: 60vh;
     display: flex;
     align-items: center;
     padding: 0 10px;
     box-sizing: border-box;
+    background: #1C1F26;
 }
 
 
@@ -235,7 +235,6 @@ body {
 
 .paragraph-section-tree{
        font-size: 1.1em;
-        color: #555;
         line-height: 1.5;
 }
 
@@ -278,19 +277,16 @@ body {
      text-align: left;
  }
 
- .section-driver {
-     height: auto;
-     background: #17B8A6;
- }
+.section-driver{
+    background: #000;
+}
 
 .section_driver {
     width: 95%;
     height: auto;
     margin: 0 auto;
-    background: #ffffff; 
     padding: 30px 60px 60px 60px;
     border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 
 }
@@ -302,6 +298,11 @@ body {
     margin-top: 30px;
 }
 
+.subtitle-section-text-small{
+    color: #555;
+    margin-top: 2em;
+}
+
 .you-need {
     width: 95%;
     display: flex;
@@ -310,6 +311,7 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     margin: auto;
+   ;
 }
 .need {
     width: 100%;
@@ -434,7 +436,7 @@ body {
 
     .section-driver{
         height: auto;
-        background: #17B8A6;
+        background: #1C1F26;
     }
 
 .section-text-driver{
@@ -449,16 +451,16 @@ body {
         width: 95%;
         height: auto;
         margin: 0 auto 20px  auto;
-        background: #ffffff; 
+        background: #1C1F26;
         padding: 30px 60px 60px 60px;
         border-radius: 15px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
          
 }
 .subtitle-section-text-driver{
     text-align: center;
     font-size: 2.5rem;
+    color: #FFBC11;;
 }
 
 .you-need{
@@ -558,6 +560,6 @@ body {
         font-size: 3em;
         /* Tamaño de fuente aún más grande */
     }
-}
+} 
 
 
