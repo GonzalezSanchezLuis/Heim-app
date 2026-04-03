@@ -1,4 +1,3 @@
-const URL_API =  "http://localhost:8080/api/v1/auth/reset-password";
 document.getElementById("reset-form").addEventListener("submit", async (e) =>{
     e.preventDefault();
 
@@ -19,9 +18,6 @@ document.getElementById("reset-form").addEventListener("submit", async (e) =>{
         messageElement.style.color = "red";
         return;
     }
-
- 
-
     if (!token) {
         messageElement.innerText = "Token no valido";
         return;
