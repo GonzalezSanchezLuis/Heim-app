@@ -18,29 +18,36 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200&icon_names=favorite,home,search,settings"
         rel="stylesheet" />
 
-    <style>
-        .back-to-client {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .back-to-client a {
-            color: #FFC300;
-            /* Color de acento para la Vaca Púrpura */
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
     <div class="back-to-client">
-        ¿Buscas cotizar una mudanza? <a href="index.html">Ir a la pagina para Usuarios</a>
+        ¿Buscas cotizar una mudanza? <a href="index.html">Ir a la página de usuarios</a>
     </div>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-logo" aria-label="Heim inicio">
+                <img src="assets/logo-web.png" alt="Logo Heim" width="40" height="40">
+                <span>Heim</span>
+            </a>
+            <nav class="nav-desktop" aria-label="Navegación principal">
+                <a href="index.html">Para usuarios</a>
+                <a href="#requisitos">Requisitos</a>
+                <a href="index.html#descargar" class="nav-cta">App usuarios</a>
+            </nav>
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil">
+            <a href="index.html">Para usuarios</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="index.html#descargar" class="nav-cta">App usuarios</a>
+        </nav>
+    </header>
 
     <div class="container driver-page">
         <header class="banner banner-driver">
@@ -50,7 +57,7 @@
                     <h2 class="subtitle-banner">No todos los que manejan, mueven algo importante.
                     Tú sí</h2>
                     <br>
-                    <button class="button driver-cta">Conduce con propósito, no solo por destino.</button>
+                    <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share" class="button driver-cta" target="_blank" rel="noopener noreferrer">Conduce con propósito, no solo por destino.</a>
                 </div>
                 <div class="banner-img">
                     <img src="assets/investment-data.svg" alt="Ilustración de un conductor exitoso" class="img">
@@ -81,7 +88,7 @@
                     <div class="section-text">
                         <h2 class="subtitle-section-text">Tres pasos para ser un Movers.</h2>
                         <ol class="driver-list">
-                            <li>Descarga la App: Busca nuestra App en Google Play Store</li>
+                            <li>Descarga la app: <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Heim en Google Play</a></li>
                             <li>Sube tus Documentos: Registra tu vehículo furgón, camión, etc. y tus papeles en la
                                 App.</li>
                             <li>¡Empieza a Ganar! Una vez aprobado, activa tu disponibilidad y recibe tus primeros
@@ -98,7 +105,7 @@
                 </div>
                 
             </section>
-            <section class="section-driver">               
+            <section id="requisitos" class="section-driver">               
                 <div class="section_driver">             
                     <div class="section-text-driver">
                             <h2 class="subtitle-section-text-driver">Que necesistas para ser movers.</h2>
@@ -129,7 +136,24 @@
             </section>
         </main>
     </div>
-    <script src="https://kit.fontawesome.com/5f3e6e66d9.js" crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('nav-mobile');
+            if (!toggle || !nav) return;
+            toggle.addEventListener('click', function () {
+                var open = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!open));
+                nav.classList.toggle('is-open', !open);
+            });
+            nav.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('is-open');
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
