@@ -5,6 +5,7 @@
     --text-main: #FFFFFF;
     --text-muted: #A0A0A0;
     --white-bg: #F5F7F8;
+   
 }
 
 * {
@@ -161,6 +162,8 @@ body {
     margin-top: 20px;
     cursor: pointer;
 }
+
+
 
 /* Desktop Styles */
 @media (min-width: 768px) {
