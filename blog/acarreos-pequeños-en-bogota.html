@@ -195,20 +195,84 @@
             </section>
         </main>
 
-        <footer id="descargar" class="footer">
-            <div class="section-footer">
-                <div class="section3">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text-footer">Cada entrega es una promesa.</h2>
-                        <p class="paragraph-section-footer">Tus clientes confían en tu negocio. Nosotros creemos que el transporte no debería ser una preocupación más cuando
-                        necesitas cumplir una entrega.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
-                            class="button store-badge" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-google-play" aria-hidden="true"></i> Cotizar mi envio
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <!-- Columna 1: Marca + confianza -->
+                <div class="footer-col footer-col--brand">
+                    <a href="index.html" class="footer-logo" aria-label="Heim inicio">
+                        <img src="/assets/logo-web-heim.png" alt="Logo Heim" width="36" height="36">
+                        <span>Heim</span>
+                    </a>
+                    <p class="footer-tagline">Carga en movimiento, control en tu mano.</p>
+                    <div class="footer-social" aria-label="Redes sociales de Heim">
+                        <a href="https://www.instagram.com/heimapp.com.co/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram de Heim">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                         </a>
+                        <!-- Agrega aquí más redes cuando las definan (Facebook, TikTok, etc.) -->
                     </div>
                 </div>
+        
+                <!-- Columna 2: Contacto -->
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Contacto</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="https://wa.link/a0dnne" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Contactanos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@heimapp.com.co">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i> info@heimapp.com.co
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bogotá, Colombia
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Columna 3: Enlaces -->
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Enlaces</h3>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acarreos-en-bogota.html">Acarreos en Bogotá</a></li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
+                                target="_blank" rel="noopener noreferrer">Descargar app</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Columna 4: Legal -->
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Legal</h3>
+                    <ul class="footer-list">
+                        <li><a href="https://sites.google.com/view/terminos-y-condiciones-de-heim/inicio"
+                                target="_blank">Términos y condiciones</a></li>
+                        <li><a href="https://sites.google.com/view/heim-privacidad/inicio" target="_blank">Política de
+                                privacidad </a></li>
+        
+                    </ul>
+                </div>
+        
             </div>
+        
+            <div class="site-footer__bottom">
+                <p>&copy; <span id="footer-year">2026</span> Heim. Todos los derechos reservados.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
+                    class="footer-store-badge" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-google-play" aria-hidden="true"></i> Disponible en Google Play
+                </a>
+            </div>
+        
+            <script>
+                document.getElementById('footer-year').textContent = new Date().getFullYear();
+            </script>
         </footer>
     </div>
 
