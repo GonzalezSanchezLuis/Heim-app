@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #ffc300;
-    --color-primary-hover: #e6a800;
+    --color-primary: #FFFF;
+    --color-primary-hover: #F06C25;
     --color-primary-glow: rgba(255, 195, 0, 0.35);
     --color-bg-dark: #0a0b0f;
     --color-bg-section: #12141c;
@@ -297,7 +297,7 @@ img {
 }
 
 .button {
-    background: linear-gradient(135deg, #ffc300 0%, #ffd54f 100%);
+    background: linear-gradient(135deg, #F06C25 0%, #F06C25 100%);
     color: #000;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -516,7 +516,7 @@ main {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #ffd54f 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #F06C25 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,7 +588,7 @@ main {
 }
 
 .footer-col__title {
-    color: #FFC300;
+    color: #F06C25;
     font-size: 0.95rem;
     font-weight: 700;
     margin-bottom: 16px;
@@ -629,7 +629,7 @@ main {
 }
 
 .footer-trust__item i {
-    color: #FFC300;
+    color: #F06C25;
 }
 
 .footer-social {
@@ -650,7 +650,7 @@ main {
 }
 
 .footer-social a:hover {
-    background: #FFC300;
+    background: #F06C25;
     color: #111111;
 }
 
@@ -675,11 +675,11 @@ main {
 }
 
 .footer-list a:hover {
-    color: #FFC300;
+    color: #F06C25;
 }
 
 .footer-list i {
-    color: #FFC300;
+    color: #F06C25;
     width: 16px;
     text-align: center;
 }
@@ -707,7 +707,7 @@ main {
 }
 
 .footer-store-badge i {
-    color: #FFC300;
+    color: #F06C25;
 }
 
 @media (max-width: 860px) {
