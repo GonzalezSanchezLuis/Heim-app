@@ -577,6 +577,179 @@ main {
     padding: 56px 24px 0;
 }
 
+.help-hero {
+    background: #111111;
+    color: #FFFFFF;
+    padding: 64px 24px 56px;
+}
+
+.help-hero__inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.help-hero__eyebrow {
+    display: inline-block;
+    color: #F06c25;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.help-hero__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.2;
+    margin: 0 0 14px;
+}
+
+.help-hero__subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #D9D9D9;
+    margin: 0;
+    max-width: 56ch;
+}
+
+.help-main {
+    background: #FFFFFF;
+    padding: 48px 24px 72px;
+}
+
+.help-main__inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.help-topic {
+    padding: 32px 0;
+}
+
+.help-topic+.help-topic {
+    border-top: 1px solid #EAEAEA;
+}
+
+.help-topic__question {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #111111;
+    margin: 0 0 12px;
+}
+
+.help-topic__answer {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 0 12px;
+}
+
+.help-topic__answer:last-child {
+    margin-bottom: 0;
+}
+
+.help-topic__answer strong {
+    font-weight: 500;
+    color: #111111;
+}
+
+.help-cta {
+    margin-top: 16px;
+    background: #FAFAFA;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.help-cta p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.95rem;
+    color: #333333;
+    margin: 0 0 14px;
+}
+
+.help-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #060606;
+    color: #F06c25;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+/* Tema con imagen: lado a lado en desktop, apilado en móvil */
+.help-topic--with-image {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.help-topic--with-image .help-topic__text {
+    flex: 1;
+    min-width: 0;
+}
+
+.help-topic--with-image .help-topic__image {
+    flex: 0 0 260px;
+}
+
+.help-topic--with-image .help-topic__image img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+/* Alterna el lado de la imagen con esta clase opcional */
+.help-topic--image-left {
+    flex-direction: row-reverse;
+}
+
+.list-section-one{
+    color: #333333;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+    .help-topic--with-image {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .help-topic--with-image .help-topic__image {
+        flex: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .help-hero {
+        padding: 48px 20px 40px;
+    }
+
+    .help-main {
+        padding: 36px 20px 56px;
+    }
+
+    .help-topic {
+        padding: 24px 0;
+    }
+}
+
 .site-footer__inner {
     max-width: 1120px;
     margin: 0 auto;
@@ -695,6 +868,8 @@ main {
     gap: 16px;
     font-size: 0.82rem;
     color: #8C8C8C;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .footer-store-badge {
@@ -712,6 +887,7 @@ main {
 
 @media (max-width: 860px) {
     .site-footer__inner {
+        padding: 0 24px;
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -724,6 +900,8 @@ main {
     .site-footer__bottom {
         flex-direction: column;
         align-items: flex-start;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 

@@ -39,75 +39,55 @@
 </head>
 
 <body>
-    <!-- <div class="back-to-client">
-        ¿Tienes un vehículo de carga? <a href="../unete-a-la-flota.html">Únete a nuestra flota</a>
-    </div> -->
+<header class="site-header">
+    <div class="site-header__inner">
+        <a href="index.html" class="site-logo" aria-label="Heim inicio">
+            <img src="../assets/logo-web-heim.png" alt="Logo Heim" width="40" height="40">
+            <span>Heim</span>
+        </a>
+        <nav class="nav-desktop" aria-label="Navegación principal">
 
-
-
-    <header class="site-header">
-        <div class="site-header__inner">
-            <a href="index.html" class="site-logo" aria-label="Heim inicio">
-                <img src="../assets/logo-web-heim.png" alt="Logo Heim" width="40" height="40">
-                <span>Heim</span>
-            </a>
-            <nav class="nav-desktop" aria-label="Navegación principal">
-            <!--   <a href="#beneficios">Beneficios</a>
-                <a href="#como-funciona">Cómo funciona</a>
-                <a href="../unete-a-la-flota.html">Se un es especialista de carga</a> -->
-                <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
-                    class="nav-cta" target="_blank" rel="noopener noreferrer">Descargar app</a>
-            </nav>
-            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" @click="toggleMenu"
-                aria-controls="nav-mobile">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil">
-        <!-- <a href="#beneficios">Beneficios</a>
-            <a href="#como-funciona">Cómo funciona</a>
-            <a href="unete-a-la-flota.html">Soy conductor</a> -->
             <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
                 class="nav-cta" target="_blank" rel="noopener noreferrer">Descargar app</a>
         </nav>
-    </header>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="nav-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil">
+
+        <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share" class="nav-cta"
+            target="_blank" rel="noopener noreferrer">Descargar app</a>
+    </nav>
+</header>
 
     <div class="container">
-        <header class="banner">
-            <div class="section-banner">
-                <div class="section-text-banner">
-                    <h1 class="title-banner">Acarreos pequeños en Fontibón: cuando un pedido pequeño es más importante de lo que parece</h1>
-                    <p class="subtitle-banner">Solo son dos cajas.
-                    
-                    No llenan una camioneta ni ocupan mucho espacio. Pero son suficientes para que tu cliente no pueda abrir su negocio hoy.
-                    
-                    Muchas veces, los pequeños envíos son los más difíciles de mover. Algunos transportadores prefieren viajes más grandes y
-                    otros consideran que no vale la pena desplazarse por pocas cajas.
-                    
-                    Para tu cliente, sin embargo, ese pedido lo es todo.
-                    
-                    Si tienes un pequeño negocio en Fontibón, seguramente sabes que no todos los pedidos son grandes, pero todos son
-                    importantes. Un retraso en la entrega puede significar perder tiempo, afectar una venta o retrasar las operaciones de
-                    otro negocio que está esperando tu mercancía..</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
-                        class="button" target="_blank" rel="noopener noreferrer">Cumple tus entregas con confianza.</a>
-                </div>
-                <div class="banner-img">
-                    <img src="../assets/acarreos-pequeños-en-fontibon.png" alt="Carreos pequeños en Fontibón" class="img"
-                        width="400" height="400">
-                </div>
-            </div>
-        </header>
-
         <main>
-            <!-- SECCIÓN 1: Ventajas de la flota de camionetas -->
-            <section id="beneficios" class="section-one">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">¿Qué es un acarreo pequeño en Fontibón?</h2>
-                        <p class="paragraph-section-one">Un acarreo pequeño es un servicio de transporte diseñado para mover mercancía que no requiere grandes capacidades de
+        <section class="help-hero">
+            <div class="help-hero__inner">
+                <span class="help-hero__eyebrow">Acarreos pequeños en Fontibón</span>
+                <h1 class="help-hero__title">Acarreos pequeños en Fontibón: cuando un pedido pequeño es más importante de lo que parece</h1>
+                <p class="help-hero__subtitle">Solo son dos cajas.               
+                No llenan una camioneta ni ocupan mucho espacio. Pero son suficientes para que tu cliente no pueda abrir su negocio hoy.              
+                Muchas veces, los pequeños envíos son los más difíciles de mover. Algunos transportadores prefieren viajes más grandes y
+                otros consideran que no vale la pena desplazarse por pocas cajas. Para tu cliente, sin embargo, ese pedido lo es todo.
+                
+                Si tienes un pequeño negocio en Fontibón, seguramente sabes que no todos los pedidos son grandes, pero todos son
+                importantes. Un retraso en la entrega puede significar perder tiempo, afectar una venta o retrasar las operaciones de
+                otro negocio que está esperando tu mercancía
+                </p>
+            </div>
+        </section>       
+        <section class="help-main">
+            <div class="help-main__inner">
+        
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">¿Qué es un acarreo pequeño en Fontibón?</h2>
+                        <p class="help-topic__answer">Un acarreo pequeño es un servicio de transporte diseñado para mover mercancía que no requiere grandes capacidades de
                         carga. Es ideal para pequeños negocios que necesitan transportar:
                         
                         Cajas de productos.
@@ -117,95 +97,86 @@
                         Entregas programadas dentro de la ciudad.
                         
                         En una localidad como Fontibón, donde conviven talleres, bodegas y pequeños comercios, es común necesitar un transporte
-                        rápido para envíos pequeños que no pueden esperar hasta el día siguiente</p>
-
+                        rápido para envíos pequeños que no pueden esperar hasta el día siguiente </p>
                     </div>
-                </div>
-            </section>
-
-            <!-- SECCIÓN 2: Envíos express vs transportadoras tradicionales -->
-            <section class="section-one" style="background-color: transparent; padding-top: 0;">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">El tamaño del pedido no determina su importancia</h2>
-                        <p class="paragraph-section-one">Existe la idea de que un pedido pequeño puede esperar. Pero en los negocios ocurre exactamente lo contrario.
-                        
-                        Muchas veces, un pequeño envío representa:
-                        
-                        Una venta que ya fue pagada.
-                        Un cliente que está esperando abrir su negocio.
-                        Una entrega comprometida para hoy.
-                        Una oportunidad de generar confianza con un nuevo cliente.
-                        
-                        El problema es que algunos servicios de transporte están diseñados para grandes cargas y no siempre responden a las
-                        necesidades de quienes solo necesitan mover unas pocas cajas.</p>
-
+                </article>
+        
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">El tamaño del pedido no determina su importancia</h2>
+                        <p class="help-topic__answer">
+                            Existe la idea de que un pedido pequeño puede esperar. Pero en los negocios ocurre exactamente lo contrario. Muchas veces, un pequeño envío representa: Una venta que ya fue pagada.
+                            Un cliente que está esperando abrir su negocio. Una entrega comprometida para hoy. Una oportunidad de generar confianza con un nuevo cliente.
+                            El problema es que algunos servicios de transporte están diseñados para grandes cargas y no siempre responden a las
+                            necesidades de quienes solo necesitan mover unas pocas cajas
+                        </p>
+                       
                     </div>
-                </div>
-            </section>
-
-            <!-- SECCIÓN 3: Evolución de los acarreos hacia la tecnología segura -->
-            <section class="section-one" style="background-color: transparent; padding-top: 0;">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">Cuando unas pocas cajas hacen la diferencia</h2>
-                        <p class="paragraph-section-one">
-                            Para un pequeño empresarios, dos cajas pueden representar mucho más que mercancía.
-                            
+        
+                </article>
+        
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">Cuando unas pocas cajas hacen la diferencia</h2>
+                        <p class="help-topic__answer">
+                            Para un pequeño empresarios, dos cajas pueden representar mucho más que mercancía.                           
                             Pueden representar la satisfacción de un cliente, la continuidad de otro negocio o una promesa que hiciste al momento de
-                            cerrar una venta.
-                            
+                            cerrar una venta.                           
                             Por eso, cuando alguien busca "acarreos pequeños en Fontibón", generalmente no está buscando un vehículo. Está buscando
                             la tranquilidad de saber que su pedido llegará cuando debe llegar.
                         </p>
+
+                       <h2 class="help-topic__question">¿Por qué los pequeños pedidos son los más difíciles de entregar?</h2> 
+                        <p class="help-topic__answer">
+                        Parece contradictorio, pero muchas veces mover pocas cajas puede ser más complicado que transportar una gran carga.
                         <br>
-                        <h2 class="subtitle-section-text">¿Por qué los pequeños pedidos son los más difíciles de entregar?</h2>
-                        <br>
-                        <p class="paragraph-section-one">Parece contradictorio, pero muchas veces mover pocas cajas puede ser más complicado que transportar una gran carga.
-                        
                         Algunas razones son:
-                        
+                        <br>
                         No todos los servicios de transporte están pensados para pequeños envíos.
                         Los transportadores suelen priorizar servicios más grandes o más rentables.
                         Un pedido pequeño puede ser igual de urgente que uno grande.
                         Los pequeños negocios necesitan soluciones rápidas y flexibles para su operación diaria.
                         
                         Cuando un negocio depende de una entrega, el tamaño del envío pasa a un segundo plano. Lo realmente importante es
-                        cumplir con el tiempo prometido.</p>
+                        cumplir con el tiempo prometido.
+                        </p>
                     </div>
-                </div>
-            </section>
-
-            <section class="section-one" style="background-color: transparent; padding-top: 0;">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">Cuando un pedido no puede esperar</h2>
-                        <p class="paragraph-section-one">
-                            Para un pequeño negocio, un envío retrasado no es simplemente un problema de transporte.
-
-                            Es un cliente esperando una respuesta.
-
-                            Es una venta que puede perderse.
-
-                            Es una promesa que debe cumplirse.
-
-                            Por eso, cuando las personas buscan "acarreos pequeños en Bogotá", en realidad están
-                            buscando algo mucho más importante:
-                            tranquilidad y confianza para cumplirle a sus clientes.
+        
+                </article>
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">Cuando un pedido no puede esperar</h2>
+                        <p class="help-topic__answer">Para un pequeño negocio, un envío retrasado no es simplemente un problema de transporte.                       
+                        Es un cliente esperando una respuesta. Es una venta que puede perderse. Es una promesa que debe cumplirse.                       
+                        Por eso, cuando las personas buscan "acarreos pequeños en Bogotá", en realidad están
+                        buscando algo mucho más importante:
+                        tranquilidad y confianza para cumplirle a sus clientes.:
                         </p>
                         <br><br>
-                        <h2 class="subtitle-section-text">Conclusión</h2>
-                        <br>
-                        <p class="paragraph-section-one"> Cada día, cientos de pequeños negocios en Bogotá necesitan
-                            mover pocas cajas, pero hacerlo de manera rápida y confiable
-                            puede marcar la diferencia entre conservar un cliente o perderlo.
-
-                            El transporte no debería ser una preocupación más para tu negocio. Debería ser una
-                            herramienta que te permita crecer y
-                            cumplir cada entrega con confianza.</p>
+                        <h2 class="help-topic__question">Conclusión</h2>
+        
+                        <p class="help-topic__answer">Cada día, cientos de pequeños negocios en Bogotá necesitan
+                        mover pocas cajas, pero hacerlo de manera rápida y confiable
+                        puede marcar la diferencia entre conservar un cliente o perderlo.
+                        
+                        El transporte no debería ser una preocupación más para tu negocio. Debería ser una
+                        herramienta que te permita crecer y
+                        cumplir cada entrega con confianza.
+                        </p>
                     </div>
-                </div>
-            </section>
+        
+                </article>
+                <article class="help-topic">
+                    <h2 class="help-topic__question">¿Necesitas ayuda?</h2>
+                    <p class="help-topic__answer">Escríbenos, estamos para yudarte!</p>
+                    <div class="help-cta">
+                        <a href="https://wa.link/a0dnne" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
         </main>
 
         <footer class="site-footer">

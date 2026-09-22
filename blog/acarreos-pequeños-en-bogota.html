@@ -39,72 +39,58 @@
 </head>
 
 <body>
-    <!-- <div class="back-to-client">
-        ¿Tienes un vehículo de carga? <a href="../unete-a-la-flota.html">Únete a nuestra flota</a>
-    </div> -->
-    
+<header class="site-header">
+    <div class="site-header__inner">
+        <a href="index.html" class="site-logo" aria-label="Heim inicio">
+            <img src="../assets/logo-web-heim.png" alt="Logo Heim" width="40" height="40">
+            <span>Heim</span>
+        </a>
+        <nav class="nav-desktop" aria-label="Navegación principal">
 
-    
-    <header class="site-header">
-        <div class="site-header__inner">
-            <a href="index.html" class="site-logo" aria-label="Heim inicio">
-                <img src="../assets/logo-web-heim.png" alt="Logo Heim" width="40" height="40">
-                <span>Heim</span>
-            </a>
-            <nav class="nav-desktop" aria-label="Navegación principal">
-            <!--  <a href="#beneficios">Beneficios</a>
-                <a href="#como-funciona">Cómo funciona</a>
-                <a href="../unete-a-la-flota.html">Se un es especialista de carga</a> -->
-                <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
-                    class="nav-cta" target="_blank" rel="noopener noreferrer">Descargar app</a>
-            </nav>
-            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" @click="toggleMenu"
-                aria-controls="nav-mobile">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil">
-        <!--  <a href="#beneficios">Beneficios</a>
-            <a href="#como-funciona">Cómo funciona</a>
-            <a href="unete-a-la-flota.html">Soy conductor</a> -->
             <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
                 class="nav-cta" target="_blank" rel="noopener noreferrer">Descargar app</a>
         </nav>
-    </header>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="nav-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil">
+
+        <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share" class="nav-cta"
+            target="_blank" rel="noopener noreferrer">Descargar app</a>
+    </nav>
+</header>
 
     <div class="container">
-        <header class="banner">
-            <div class="section-banner">
-                <div class="section-text-banner">
-                    <h1 class="title-banner">Acarreos pequeños en Bogotá: cuando solo necesitas mover unas pocas cajas y cumplirle a tu cliente</h1>
-                    <p class="subtitle-banner">Son las 5:15 P.M. El taller ya terminó la producción del día. Sobre la mesa hay tres cajas listas para salir. Tu cliente
-                    las necesita hoy.El problema es que conseguir un transporte para un envío pequeño en Bogotá no siempre es tan sencillo como parece.
-                    
-                    Algunos conductores prefieren viajes más grandes. Otros no tienen disponibilidad inmediata. Y muchas veces no sabes
-                    cuánto te costará el servicio hasta que el vehículo llega.
-                    
-                    Mientras buscas una solución, el reloj sigue avanzando y tu cliente continúa esperando.
-                    
-                    Para un pequeño empresario, no se trata únicamente de mover unas cajas. Se trata de cumplir una promesa.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.heim.app.co&pcampaignid=web_share"
-                        class="button" target="_blank" rel="noopener noreferrer">Cumple tus entregas con confianza.</a>
-                </div>
-                <div class="banner-img">
-                    <img src="../assets/acarreos-pequeños-en-bogota.png"
-                        alt="Carreos pequeños en Bogotá" class="img" width="400" height="400">
-                </div>
-            </div>
-        </header>
-
         <main>
-            <!-- SECCIÓN 1: Ventajas de la flota de camionetas -->
-            <section id="beneficios" class="section-one">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">¿Qué es un acarreo pequeño en Bogotá?</h2>
-                        <p class="paragraph-section-one">Un acarreo pequeño es un servicio de transporte pensado para mercancías que no requieren un camión completo o grandes
+        <section class="help-hero">
+            <div class="help-hero__inner">
+                <span class="help-hero__eyebrow">Acarreos pequeños</span>
+                <h1 class="help-hero__title">¿Qué es un acarreo pequeño en Bogotá?</h1>
+                <p class="help-hero__subtitle">Son las 6 de la tarde y acabas de comprar un colchón nuevo, o te avisaron que hoy sí te entregan esa nevera que
+                    compraste hace dos semanas, o simplemente necesitas sacar unas cajas de la casa de tus papás antes del fin de semana. O tal vez
+                    eres el encargado de una oficina que se cambia de puesto de trabajo, un local comercial que necesita mover  mercancía a una
+                    bodega, o un negocio que recibe mobiliario nuevo y necesita retirar el viejo antes de abrir al público. En ningún caso es una
+                    mudanza completa. No necesitas un camión de 20 toneladas ni tres operarios durante todo el día. Necesitas
+                    algo más simple, más rápido y, ojalá, más barato: un acarreo.
+                    El problema es que cuando buscas "acarreos en Bogotá" —seas una persona natural o una empresa— te encuentras
+                    con decenas de
+                    opciones, precios que nadie explica con claridad y la duda de siempre: ¿me van a cobrar lo justo o me van a
+                    ver la cara? Esta
+                    guía existe para resolver exactamente eso, tanto si necesitas el servicio para tu casa como para tu negocio.
+                </p>
+            </div>
+        </section>
+        <section class="help-main">
+            <div class="help-main__inner">
+        
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">¿Qué es un acarreo pequeño en Bogotá?</h2>
+                        <p class="help-topic__answer">Un acarreo pequeño es un servicio de transporte pensado para mercancías que no requieren un camión completo o grandes
                         capacidades de carga. Es común entre pequeños negocios que necesitan mover:
                         
                         Cajas de productos.
@@ -115,41 +101,28 @@
                         
                         Lo que muchas personas descubren es que el verdadero reto no es encontrar un vehículo, sino encontrar uno disponible,
                         confiable y que tenga sentido para el tamaño de su envío.</p>
-                       
                     </div>
-                </div>
-            </section>
-
-            <!-- SECCIÓN 2: Envíos express vs transportadoras tradicionales -->
-            <section class="section-one" style="background-color: transparent; padding-top: 0;">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">El problema no son las cajas, es el tiempo</h2>
-                        <p class="paragraph-section-one">Cuando un pequeño empresario busca un acarreo, normalmente ya perdió tiempo.
-                        
-                        Ha llamado a varios transportadores.
-                        
-                        Ha preguntado precios.
-                        
-                        Ha esperado respuestas.
-                        
-                        Y en algunos casos, ha tenido que decirle a su cliente:
-                        
+                </article>
+        
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">El problema no son las cajas, es el tiempo</h2>
+                        <p class="help-topic__answer">Cuando un pequeño empresario busca un acarreo, normalmente ya perdió tiempo.                       
+                        Ha llamado a varios transportadores.                       
+                        Ha preguntado precios.                       
+                        Ha esperado respuestas.                       
+                        Y en algunos casos, ha tenido que decirle a su cliente:                       
                         "El pedido llegará mañana."
                         
                         Lo que comenzó siendo un problema logístico termina afectando la experiencia del cliente y la reputación del negocio.</p>
-                        
                     </div>
-                </div>
-            </section>
-
-            <!-- SECCIÓN 3: Evolución de los acarreos hacia la tecnología segura -->
-            <section class="section-one" style="background-color: transparent; padding-top: 0;">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">¿Qué deberías tener en cuenta antes de contratar un acarreo pequeño?</h2>
-                        <p class="paragraph-section-one">
-                        ¿El precio está definido desde el principio?
+        
+                </article>
+        
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">¿Qué deberías tener en cuenta antes de contratar un acarreo pequeño?</h2>
+                        <p class="help-topic__answer">¿El precio está definido desde el principio?
                         <br>
                         ¿El vehículo es adecuado para la mercancía?
                         <br>
@@ -160,39 +133,45 @@
                         ¿Tu pedido está asegurado durante el trayecto?
                         <br>
                         ¿Recibirás información sobre el estado del envío?
-                        <br>                     
-                        Muchas veces el servicio más económico termina siendo el más costoso cuando implica retrasos o incumplimientos.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-one" style="background-color: transparent; padding-top: 0;">
-                <div class="section1">
-                    <div class="section-text">
-                        <h2 class="subtitle-section-text">Cuando un pedido no puede esperar</h2>
-                        <p class="paragraph-section-one">
-                            Para un pequeño negocio, un envío retrasado no es simplemente un problema de transporte.
-                            
-                            Es un cliente esperando una respuesta.
-                            
-                            Es una venta que puede perderse.
-                            
-                            Es una promesa que debe cumplirse.
-                            
-                            Por eso, cuando las personas buscan "acarreos pequeños en Bogotá", en realidad están buscando algo mucho más importante:
-                            tranquilidad y confianza para cumplirle a sus clientes.
-                        </p>
-                        <br><br>
-                        <h2 class="subtitle-section-text">Conclusión</h2>
                         <br>
-                        <p class="paragraph-section-one"> Cada día, cientos de pequeños negocios en Bogotá necesitan mover pocas cajas, pero hacerlo de manera rápida y confiable
+                        Muchas veces el servicio más económico termina siendo el más costoso cuando implica retrasos o incumplimientos
+                        </p>
+                    </div>
+        
+                </article>
+                <article class="help-topic help-topic--with-image">
+                    <div class="help-topic__text">
+                        <h2 class="help-topic__question">Cuando un pedido no puede esperar</h2>
+                        <p class="help-topic__answer">Para un pequeño negocio, un envío retrasado no es simplemente un problema de transporte.                     
+                        Es un cliente esperando una respuesta.                      
+                        Es una venta que puede perderse.                      
+                        Es una promesa que debe cumplirse.                       
+                        Por eso, cuando las personas buscan "acarreos pequeños en Bogotá", en realidad están buscando algo mucho más importante:
+                        tranquilidad y confianza para cumplirle a sus clientes.
+
+                        <br><br>
+                        Cada día, cientos de pequeños negocios en Bogotá necesitan mover pocas cajas, pero hacerlo de manera rápida y confiable
                         puede marcar la diferencia entre conservar un cliente o perderlo.
                         
                         El transporte no debería ser una preocupación más para tu negocio. Debería ser una herramienta que te permita crecer y
-                        cumplir cada entrega con confianza.</p>
+                        cumplir cada entrega con confianza.
+                    
+                    
+                    </p>
                     </div>
-                </div>
-            </section>
+                
+                </article>
+                <article class="help-topic">
+                    <h2 class="help-topic__question">¿Necesitas ayuda?</h2>
+                    <p class="help-topic__answer">Escríbenos, estamos para yudarte!</p>
+                    <div class="help-cta">
+                        <a href="https://wa.link/a0dnne" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
         </main>
 
         <footer class="site-footer">
